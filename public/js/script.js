@@ -85,9 +85,16 @@ login( 'larem');
 
 
 //basic arithematric
-
-45/5
+11 +12;
+1+0.5;
+43 - 12
+45/7
+5 * 3;
 14%3
 
-'2' + 2
+Math.floor( 45/24);
+45%24;
+Math.random()*1000;
+Math.max(34,32,37);
+2* (3+4)-5/2;
   
