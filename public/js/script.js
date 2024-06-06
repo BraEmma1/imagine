@@ -62,4 +62,32 @@ const bottle1 = {
    console.log('we did it!'); 
   }
   
+
+  //functions
+//defining a function
+
+function login ( username,password){
+  // validate username and password
+   if(!username || !password){
+     return 'Username or password mot provided'
+   }
+  //verify username and password
+ if(username == 'larem' && password =='1234' ){
+   return 'user is logged in';
+ } else{
+   return 'invalid username or password '
+ }
+}
+
+//invoking a function
+login( 'larem');
+
+
+
+//basic arithematric
+
+45/5
+14%3
+
+'2' + 2
   
