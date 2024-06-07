@@ -97,4 +97,28 @@ Math.floor( 45/24);
 Math.random()*1000;
 Math.max(34,32,37);
 2* (3+4)-5/2;
+
+
+
+
+
+//strings in JavaScript
+const firstname = 'Emmanuel lartey';
+
+//string methods
+firstname.length
+firstname.toUpperCase();
+firstname.charAt()
+firstname.slice(5,8)
+firstname.split('')
+firstname.replace("lartey","osei lartey");
+firstname.indexOf('rt')
+
+// string conversion
+Number("3.243");
+parseInt("3.243");
+parseFloat("3.243")
+let amount = 18000;
+console.log(`GHS${amount}`)
+amount.toString()
   
