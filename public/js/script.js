@@ -122,28 +122,71 @@ let amount = 18000;
 console.log(`GHS${amount}`)
 amount.toString()
   
-//wirte
 
-// object in javaScript
-const user = {
-  email:'laremdetech@gmail.com',
-  password:'1234'
-}
-function resetPassword(email, newPassword){
-  //check if email and new password was provided
-  if (!email || !newPassword){
-    return "Email or password not provided";
+/ Functions
+const participants = [];
+function addParticipant(email){
+  // Check if email was provided
+  if (!email) {
+    return 'No email provided'
   }
-  //check if provided email is correct
-  if(email===user.email){
-    //Update password with new one
-    user.password = newPassword
-    return 'password reset successful'
+  // Check if email is valid
+  if (!email.includes('@gmail.com')) {
+    return 'Invalid email provided';
   }
-  if(email !== user.email){
-    return "Invalid email"
+  // Add email to participants
+  participants.push(email);
+    return 'Participant added';
   }
-}
-user
-resetPassword('laremdetech@gmail')
-user
+
+addParticipant('bettyafuaantwi@yahoo.com');
+addParticipant('lizzie@gmail.com');
+addParticipant();
+addParticipant('bettyafua');
+participants;
+
+// // Arrays in JavaScript
+// const users = [
+//   {
+//     username: 'Tilopsiii',
+//     password: '1234',
+//     email: 'bettyafuaantwi
+//     password: '12345',
+//     email: 'lizzie@gmail.com'
+//   }
+// ];
+
+// Write a function that will take a user with  firstname, lastname and return fullname;
+function fullName(user) {
+  return {
+    ...user, 
+    fullName: `${user.firstname} ${user.lastname}`
+  };
+     }
+  
+  const user = {
+    firstname: 'Elizabeth',
+    lastname: 'Odei'
+  }
+    fullName(user);
+  
+  
+  // Array map
+  const users = [
+      {firstname: 'Elizabeth', lastname: 'Odei'},
+      {firstname: 'Abena', lastname: 'Yankey'},
+      {firstname: 'Ama', lastname: 'Manu'},
+      {firstname: 'Henry', lastname: 'Amponsah'},
+      {firstname: 'Philip', lastname: 'Antwi'},
+  
+  ]
+  // users.map(fullName);
+  
+  // Square of numbers
+  function square(number){
+    return number ** 2;
+  }
+  square(5);
+  const numbers = [9, 8, 7, 6];
+  numbers.map(square);
+  
