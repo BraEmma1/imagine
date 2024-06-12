@@ -139,8 +139,8 @@ function addParticipant(email){
     return 'Participant added';
   }
 
-addParticipant('bettyafuaantwi@yahoo.com');
-addParticipant('lizzie@gmail.com');
+addParticipant('larem@yahoo.com');
+addParticipant('lsoer@gmail.com');
 addParticipant();
 addParticipant('bettyafua');
 participants;
@@ -148,11 +148,11 @@ participants;
 // // Arrays in JavaScript
 // const users = [
 //   {
-//     username: 'Tilopsiii',
+//     username: 'emma,
 //     password: '1234',
-//     email: 'bettyafuaantwi
+//     email: 'emmanuelosei831@gmail.com
 //     password: '12345',
-//     email: 'lizzie@gmail.com'
+//     email: 'larem@gmail.com'
 //   }
 // ];
 
@@ -165,15 +165,15 @@ function fullName(user) {
      }
   
   const user = {
-    firstname: 'Elizabeth',
-    lastname: 'Odei'
+    firstname: 'Emma',
+    lastname: 'Osei'
   }
     fullName(user);
   
   
   // Array map
   const users = [
-      {firstname: 'Elizabeth', lastname: 'Odei'},
+      {firstname: 'stella', lastname: 'Odei'},
       {firstname: 'Abena', lastname: 'Yankey'},
       {firstname: 'Ama', lastname: 'Manu'},
       {firstname: 'Henry', lastname: 'Amponsah'},
@@ -189,4 +189,12 @@ function fullName(user) {
   square(5);
   const numbers = [9, 8, 7, 6];
   numbers.map(square);
+  
+  // Write a function that takes a number. If the number is an even number, it should return "true" if it is an odd number, it should return "false".
+  function isEven(number){
+    return number % 2 === 0;
+  }
+     isEven(6);
+  numbers.filter(isEven);
+  
   
