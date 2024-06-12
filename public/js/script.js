@@ -122,3 +122,28 @@ let amount = 18000;
 console.log(`GHS${amount}`)
 amount.toString()
   
+//wirte
+
+// object in javaScript
+const user = {
+  email:'laremdetech@gmail.com',
+  password:'1234'
+}
+function resetPassword(email, newPassword){
+  //check if email and new password was provided
+  if (!email || !newPassword){
+    return "Email or password not provided";
+  }
+  //check if provided email is correct
+  if(email===user.email){
+    //Update password with new one
+    user.password = newPassword
+    return 'password reset successful'
+  }
+  if(email !== user.email){
+    return "Invalid email"
+  }
+}
+user
+resetPassword('laremdetech@gmail')
+user
